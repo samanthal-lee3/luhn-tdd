@@ -27,7 +27,7 @@
     def compare_num
       @subtracted = []
 
-      doubled.each_with_index do |val, index|
+      @doubled.each_with_index do |val, index|
         if val > 10
           changed_num = val - 9
           @subtracted << changed_num
