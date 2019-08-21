@@ -1,0 +1,21 @@
+
+ 
+double digits logic
+
+
+
+
+test
+
+    it "should adjust values if val>10" do 
+    arr = [8,1,18,4,10,6,0,3,16,5,0,0,16,5,0,5]
+    expect(response).to eq([8,1,9,4,1,6,0,3,7,5,0,0,7,5,0,5])
+  end
+
+
+test
+
+  it "should test for valid card number" do 
+    arr = [8,1,9,4,1,6,0,3,7,5,0,0,7,5,0,5]
+    expect(response).to eq("Invalid Card Number")
+  end
