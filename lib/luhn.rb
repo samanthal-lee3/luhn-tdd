@@ -1,13 +1,13 @@
  class Luhn
 
-
-
+    #build an instance of the luhn class
     def initialize(arr)
       @luhn = arr
     end
 
-
-    #for each even index, replace val with doubled val
+    #build new array
+    #store doubled val of each even index
+    #store original val of each odd index
     def double_digits
       @doubled = []
 
@@ -21,8 +21,9 @@
       end
     end
 
-
-    #for each index, if val>10, subtract 9 and store new val
+    #Build a new array. For each index...
+    #if val>=10, subtract 9 and store new val
+    #if val<10, store original val
     def compare_num
       @subtracted = []
 
@@ -36,6 +37,8 @@
       end
     end
     
+    #sum total of @subtracted array
+    #divide total by 10 and test for valid num
     def test_validity
      card_sum = @subtracted.sum
      if 
