@@ -35,21 +35,31 @@ describe Luhn do
    expect(results).to eq([8,1,9,4,1,6,0,3,7,5,0,0,7,5,0,5])
   end
 
-  it "#valid? should test for valid card number" do 
-    #arrange
-    my_card = Luhn.new("4194560385008505")
+  context 'when data is invlaid' do 
+    it "#valid? should test for invalid card number" do 
+      #arrange
+      my_card = Luhn.new("4194560385008505")
 
-    #act
-    result = my_card.valid?
+      #act
+      result = my_card.valid?
 
-    #assert
-    expect(result).to eq(false)
+      #assert
+      expect(result).to eq(false)
+    end
   end
 
-  #another test for true test
-  #use a context within rspec- valid context or invalid context
-  #with valid arguments
-  #with invalid arguments
+  context 'when data is valid' do 
+    it "#valid? should test for valid card number" do 
+      #arrange
+      my_card = Luhn.new("4194560385008504")
+
+      #act
+      result = my_card.valid?
+
+      #assert
+      expect(result).to eq(true)
+    end
+  end
 
 end
     
