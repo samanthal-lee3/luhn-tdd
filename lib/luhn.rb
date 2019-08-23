@@ -5,13 +5,12 @@
       @input = input
     end
 
+    #convert string of numbers to data array
     def string_to_array
       @input.chars.map {|e| e.to_i}
     end
 
-    #build new array
-    #store doubled val of each even index
-    #store original val of each odd index
+    #double value of each even index
     def double_digits
       doubled = []
 
@@ -25,9 +24,7 @@
       doubled
     end
 
-    #Build a new array. For each index...
-    #if val>=10, subtract 9 and store new val
-    #if val<10, store original val
+    #adjust val based on relation to 10
     def compare_num
       subtracted = []
 
@@ -41,8 +38,7 @@
       subtracted
     end
     
-    #sum total of @subtracted array
-    #divide total by 10 and test for valid num
+    #sum total and test for validity
     def valid?
      card_sum = compare_num.sum
      if 
