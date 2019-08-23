@@ -12,7 +12,8 @@ https://medium.com/@samanthal.lee3/lady-code-8-b7f6e434fa86
 ## Test-Driven Development:
 
 ![test](https://user-images.githubusercontent.com/49353329/63625486-cc6a5900-c5cd-11e9-99b5-32803d0f83ab.JPG)
-This example of a test shows the use of arrange, act, and assert to organize and define clean and clear tests.
+
+* This example of a test shows the use of arrange, act, and assert to organize and define clean and clear tests.
 
 ## Application Details:
 
